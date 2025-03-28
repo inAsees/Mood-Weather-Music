@@ -1,0 +1,77 @@
+Python - Developer Task
+This is a simple task to understand your thinking, logical and technical skills.
+We want to know how you think under abstract conditions. We are looking for how you
+execute this task along with your ability to execute this.
+Please note
+We are interested in:
+● How you approach app development.
+● Feature Planning
+● How clearly you can think.
+● How usable and readable your code is in the future
+● How well you can collaborate with other developers
+● The quality of your code
+● The quality of your comments, quit tests, code blocks (if any)
+If you are stuck somewhere, please ask us.
+Your Submission will be graded based on the below factors:
+
+● Solution Planning
+● Code Quality
+● Code Readability
+● Comments
+● Documentation
+● Code Style (Pick one and stick to it)
+● Use of external framework and dependencies (Lesser the better)
+● Unit Tests (Required, very easy to figure out)
+● Error Handling
+● Exception handling
+
+Confidential
+Make sure to provide any/all supporting docs, images, diagrams and code demonstrating the
+above.
+
+Instructions
+
+You have complete access to the internet.
+Feel free to take as much time as possible. We believe in Quality, so you don’t have to rush.
+You are free to use any Packages or Plugins necessary.
+You can use either AWS Serverless (API Gateway and Lambdas etc..) Or Fast API
+Only.
+Some Supporting Resources: (Feel free to use anything else)
+Weather Data:
+OpenWeatherMap: OpenWeatherMap offers a variety of services including weather data,
+which provides current weather information, forecasts, and historical weather data. For more
+information, check their API documentation here.
+Song Data:
+Last.fm: Last.fm's API provides numerous services including song recommendations based on
+different moods or genres. Check their API documentation here.
+Remember that while these APIs offer free tiers, they also have certain limitations in terms of
+the number of requests you can make in a given time period. Ensure to handle potential rate
+limiting or API quota exceeded errors in your application.
+We are aware that you are using technologies that you might have never used before, & that is
+part of the challenge. Don’t worry about being perfect.
+Task
+Below is the app you will build
+
+Confidential
+This app will take the user's current mood and city as input, check if the mood matches the
+weather in that city, and then recommend a song that matches the user's mood. The system
+will leverage free weather and song recommendation API services to provide the necessary
+data.
+Detailed Requirements:
+Mood Input: The system should accept the user's current mood as input.
+City Input: The system should accept the user's city as input.
+Weather API: The system should use a free weather API service like OpenWeatherMap or
+Weatherstack to fetch the current weather data for the given city.
+Mood-Weather Match: Implement logic to determine if the current weather matches the mood
+entered by the user.
+Song Recommendation API: Use a free API service like Last.fm or Musixmatch to suggest a
+song that matches the entered mood.
+Postman Collection: Provide a Postman collection with requests to all the available endpoints.
+Submission Zip Should Include:
+[DO NOT POST A PUBLIC LINK TO THE SOLUTION OR HOST
+ON GITHUB]
+
+1. Plan and Overview Document
+2. Code Folder Zip
+3. Postman Collection
+4. Diagrams if any
