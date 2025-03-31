@@ -28,7 +28,7 @@ The application follows a clean architecture approach with the following compone
 
 ## External APIs
 
-- **OpenWeatherMap API**: Used to fetch current weather data for a city
+- **[OpenWeatherMap API][]**: Used to fetch current weather data for a city
 - **Last.fm API**: Used to get song recommendations based on mood tags
 
 ## Getting Started
@@ -43,7 +43,7 @@ The application follows a clean architecture approach with the following compone
 
 ### Environment Variables
 
-Create a `.env` file in the root directory with the following variables(If you do not want to add your API keys or you do not have API keys, there is already two API keys present in the .env file, which could be used to test the application):
+Create a `.env` file in the root directory with the following variables:
 - OPENWEATHER_API_KEY=XXXXXXXXXXX
 - LASTFM_API_KEY=XXXXXXXXXXX
 
