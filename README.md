@@ -28,8 +28,8 @@ The application follows a clean architecture approach with the following compone
 
 ## External APIs
 
-- **[OpenWeatherMap API][]**: Used to fetch current weather data for a city
-- **Last.fm API**: Used to get song recommendations based on mood tags
+- **[OpenWeatherMap API][https://openweathermap.org/api]**: Used to fetch current weather data for a city
+- **[Last.fm API][https://www.last.fm/api]**: Used to get song recommendations based on mood tags.
 
 ## Getting Started
 
