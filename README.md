@@ -59,7 +59,7 @@ Activate the virtual environment using:
 ### Installing dependencies
 
 Install the dependencies using:
-- ```pip install -r requirenments.txt```
+- ```pip install -r requirements.txt```
 
 ### Start Application
 Start the application using:
