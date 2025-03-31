@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "a64583a8-7a10-4f54-a9f7-702dbd206368",
+		"name": "Mood-Weather-Music",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20435400"
+	},
+	"item": [
+		{
+			"name": "Valid Mood and City name with mood matched with weather",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mood\": \"happy\",\n    \"city\": \"jammu\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/recommendations",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"recommendations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Valid Mood and City name with mood matched with weather",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mood\": \"happy\",\n    \"city\": \"jammu\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/recommendations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"recommendations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 30 Mar 2025 05:46:46 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "472"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mood\": \"happy\",\n    \"city\": \"jammu\",\n    \"weather\": {\n        \"condition\": \"clouds\",\n        \"temperature\": 28.23,\n        \"temperature_category\": \"warm\",\n        \"humidity\": 16,\n        \"wind_speed\": 1.1,\n        \"description\": \"few clouds\"\n    },\n    \"mood_matches_weather\": true,\n    \"recommendation\": {\n        \"title\": \"Hey Ya!\",\n        \"artist\": \"OutKast\",\n        \"url\": \"https://www.last.fm/music/OutKast/_/Hey+Ya%21\"\n    },\n    \"explanation\": \"Your happy mood aligns well with the current warm and clouds weather in jammu.We've recommended 'Hey Ya!' by 'OutKast' to complement your mood.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Valid Mood and City name with mood not matched with weather",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mood\": \"sad\",\n    \"city\": \"jammu\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/recommendations",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"recommendations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Valid Mood and City name with mood matched with weather Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mood\": \"sad\",\n    \"city\": \"jammu\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/recommendations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"recommendations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 30 Mar 2025 05:48:37 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "571"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mood\": \"sad\",\n    \"city\": \"jammu\",\n    \"weather\": {\n        \"condition\": \"clouds\",\n        \"temperature\": 28.23,\n        \"temperature_category\": \"warm\",\n        \"humidity\": 16,\n        \"wind_speed\": 1.1,\n        \"description\": \"few clouds\"\n    },\n    \"mood_matches_weather\": false,\n    \"recommendation\": {\n        \"title\": \"Only Love Can Hurt Like This\",\n        \"artist\": \"Paloma Faith\",\n        \"url\": \"https://www.last.fm/music/Paloma+Faith/_/Only+Love+Can+Hurt+Like+This\"\n    },\n    \"explanation\": \"Your sad mood doesn't quite match the current warm and clouds weather in jammu.We've recommended 'Only Love Can Hurt Like This' by 'Paloma Faith' to enhance your mood regardless of the weather.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Invalid Mood and Valid City name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mood\": \"thrilled\",\n    \"city\": \"jammu\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/recommendations",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"recommendations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Valid Mood and City name with mood not matched with weather Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mood\": \"thrilled\",\n    \"city\": \"jammu\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/recommendations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"recommendations"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 30 Mar 2025 05:49:05 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "276"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": [\n        {\n            \"type\": \"enum\",\n            \"loc\": [\n                \"body\",\n                \"mood\"\n            ],\n            \"msg\": \"Input should be 'happy', 'sad', 'calm', 'energetic', 'romantic', 'angry', 'anxious' or 'relaxed'\",\n            \"input\": \"thrilled\",\n            \"ctx\": {\n                \"expected\": \"'happy', 'sad', 'calm', 'energetic', 'romantic', 'angry', 'anxious' or 'relaxed'\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Valid Mood and Invalid City name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mood\": \"happy\",\n    \"city\": \"cape komodo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/recommendations",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"recommendations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Invalid Mood and Valid City name Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mood\": \"happy\",\n    \"city\": \"cape komodo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/recommendations",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"recommendations"
+							]
+						}
+					},
+					"status": "Service Unavailable",
+					"code": 503,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 30 Mar 2025 05:49:47 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "82"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Weather service error: Unexpected error: City 'cape komodo' not found\"\n}"
+				}
+			]
+		}
+	]
+}
